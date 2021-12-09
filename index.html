@@ -1,30 +1,24 @@
-<html>
-	<style>
-	body {
-	background-color: linen;
-	}
-
-	h1 {
-	color: grey;
-	text-align: center;
-	} 
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Index </title>
+	</head>
 	
-	p{
-	color: black;
-	text-align: center;
-	}
-	</style>
-<body 
-	background="image/background3.jpg">
-	<div id="mid">
-	<id="headerContent">
+	<body>
+		<header>
+			<div class="topnav">
+				<a href="homepage.html">Home</a>
+				<a class="active" href="index.html">Index</a>
+				<a href="photo_Gallery.html">Photo Gallery</a>
+				<a href="about_us.html">About Us</a>
+				<a href="feedback.html">Feedback</a>
+			</div>
+		</header>
 
-	
-		<div class = "topnav">
-			<a href = "index.php">Home </a>
-			<a href ="photo_Gallery.html">Photo Gallery</a>
-			<a href="about_us.html">About Me </a>
-		</div>
+		<video width=350px height=700px controls loop>
+			<source src="image/boomerang.mp4" type="video/mp4">
+		  </video>
+
 			<h1><u>Get to Know Me?</u></h1>
 			<p>Name : Qammarul Bin Mohd Amin</p>
 			<p>Gender : Male</p>
@@ -32,10 +26,218 @@
 			<p>Education : Diploma in Science Computer at UiTM Cawangan Pahang Kampus Raub
 						<br>Degree in Science Computer at UiTM Cawangan Terengganu Kampus Kuala Terengganu</p><br>
 			
+			<h1><u> My Skills </u></h1>
+						<ul class="bar-graph">
+							<li class="bar-graph-axis">
+							  <div class="bar-graph-label">90%</div>
+							  <div class="bar-graph-label">80%</div>
+							  <div class="bar-graph-label">60%</div>
+							  <div class="bar-graph-label">50%</div>
+
+							</li>
+							<li class="bar primary" style="height: 95%;" title="95">
+							  <div class="percent">90<span>%</span></div>
+							  <div class="description">HTML</div>
+							</li>
+							<li class="bar secondary" style="height: 90%;" title="90">
+							  <div class="percent">80<span>%</span></div>
+							  <div class="description">CSS</div>
+							</li>
+							<li class="bar success" style="height: 80%;" title="80">
+							  <div class="percent">60<span>%</span></div>
+							  <div class="description">PHP</div>
+							</li>
+							<li class="bar warning" style="height: 75%;" title="75">
+							  <div class="percent">50<span>%</span></div>
+							  <div class="description">JavaScript</div>
+							</li>
+
+						  </ul>
+						  
+						  
 			<p>"This web is just for Lab Assignment subject CSC574"</p>
 			
 	</div>
 </body>
+<style>
+	body {
+	background-color: #e9eb92fd;
 
+	}
+
+	h1 {
+	color: rgb(0, 0, 0);
+	text-align: center;
+	} 
+	
+	p{
+	color: black;
+	text-align: center;
+	}
+	/* Add a black background color to the top navigation */
+	.topnav {
+  	background-color: #333;
+  	overflow: hidden;
+	}
+
+	/* Style the links inside the navigation bar */
+	.topnav a {
+  	float: left;
+  	color: #f2f2f2;
+  	text-align: center;
+ 	 padding: 14px 16px;
+ 	 text-decoration: none;
+  	font-size: 17px;
+	}
+
+	/* Change the color of links on hover */
+	.topnav a:hover {
+ 	 background-color: #ddd;
+ 	 color: black;
+	}
+
+	/* Add a color to the active/current link */
+	.topnav a.active {
+  	background-color: #00f7ff;
+  	color: white;
+	}
+
+	video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+	
+}.bar-graph {
+  padding: 0;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 425px;
+  margin: 0;
+}
+
+.bar-graph li {
+  display: block;
+  padding: 1.5625rem 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+  border-radius: 4px 4px 0 0;
+  max-width: 20%;
+  height: 100%;
+  margin: 0 1.8% 0 0;
+  -webkit-flex: 1 1 15%;
+      -ms-flex: 1 1 15%;
+          flex: 1 1 15%;
+}
+
+.bar-graph .bar-graph-axis {
+  -webkit-flex: 1 1 8%;
+      -ms-flex: 1 1 8%;
+          flex: 1 1 8%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bar-graph .bar-graph-label {
+  margin: 0;
+  background-color: none;
+  color: #8a8a8a;
+  position: relative;
+}
+
+@media print, screen and (min-width: 40em) {
+  .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px dashed #8a8a8a;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 20%;
+  }
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 64em) {
+  .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+    width: 30%;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .bar-graph .bar-graph-label:after {
+    left: auto;
+    right: 0;
+  }
+}
+
+.bar-graph .percent {
+  letter-spacing: -3px;
+  opacity: 0.4;
+  width: 100%;
+  font-size: 1.875rem;
+  position: absolute;
+}
+
+@media print, screen and (min-width: 40em) {
+  .bar-graph .percent {
+    font-size: 3.875rem;
+  }
+}
+
+.bar-graph .percent span {
+  font-size: 1.875rem;
+}
+
+.bar-graph .description {
+  font-weight: 800;
+  opacity: 0.5;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 14px;
+  bottom: 20px;
+  position: absolute;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.bar-graph .bar.primary {
+  border: 1px solid #1779ba;
+  background: linear-gradient(#2196e3, #1779ba 70%);
+}
+
+.bar-graph .bar.secondary {
+  border: 1px solid #767676;
+  background: linear-gradient(#909090, #767676 70%);
+}
+
+.bar-graph .bar.success {
+  border: 1px solid #3adb76;
+  background: linear-gradient(#65e394, #3adb76 70%);
+}
+
+.bar-graph .bar.warning {
+  border: 1px solid #ffae00;
+  background: linear-gradient(#ffbe33, #ffae00 70%);
+}
+
+.bar-graph .bar.alert {
+  border: 1px solid #cc4b37;
+  background: linear-gradient(#d67060, #cc4b37 70%);
+}
+
+
+	</style>
 </html>
 
